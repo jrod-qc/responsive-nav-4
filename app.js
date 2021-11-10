@@ -24,14 +24,6 @@ for (var i = 0; i < mobileNavBtn.length; i++) {
 
 
 
-// $(document).ready(function() {
-//     $('#nav-icon').click(function() {
-//         $(this).toggleClass('open');
-//     });
-// });
-
-
-
 function navMobile() {
     const navBtn = document.querySelector("#nav-icon");
     let menuOpen = false;
@@ -49,3 +41,20 @@ function navMobile() {
     })
 }
 navMobile();
+
+
+function subNavTrigger() {
+    $(".mobile-sub-nav-trigger").click(function() {
+        $(".mobile-sub-nav-list").slideToggle();
+    })
+}
+
+subNavTrigger();
+
+function subNavTrigger2() {
+    $(".mobile-sub-nav-trigger-2").click(function() {
+        $(".mobile-sub-nav-list-2").slideToggle();
+    })
+}
+
+subNavTrigger2();
