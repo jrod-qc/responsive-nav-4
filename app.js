@@ -58,3 +58,26 @@ function subNavTrigger2() {
 }
 
 subNavTrigger2();
+
+
+function displayPhoneOptions() {
+    $(".side-icon-phone-list-trigger").click(function() {
+        $(".side-icon-phone-list").addClass("display-phone-options");
+        $(".side-icon-phone-list").removeClass("hide-phone-options");
+        $(".side-icon-phone-list-trigger").css("display", "none");
+        $(".side-icon-phone-list-exit-btn").css("display", "flex");
+    })
+}
+
+displayPhoneOptions();
+
+function hidePhoneOptions() {
+    $(".side-icon-phone-list-exit-btn").click(function() {
+        $(".side-icon-phone-list").removeClass("display-phone-options");
+        $(".side-icon-phone-list").addClass("hide-phone-options");
+        $(".side-icon-phone-list-trigger").css("display", "flex");
+        $(".side-icon-phone-list-exit-btn").css("display", "none");
+    })
+}
+
+hidePhoneOptions();
